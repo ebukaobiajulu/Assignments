@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.7;
+    color: #fff;
+    text-decoration: none;  
+  }
+  
+  :root{
+    --cc-1: hsl(31, 77%, 52%);
+    --cc-2: hsl(184, 100%, 22%);
+    --cc-3: hsl(179, 100%, 13%);
+    --cc-p: hsla(0, 0%, 100%, 0.75);
+    --cc-light-grey: hsl(0, 0%, 95%);
+    --bs-font: 'Big Shoulders Display', cursive;
+    --lex-font: 'Lexend Deca', sans-serif;
+  }
+  
+  /* General */
+  p{
+    font-size: 12px;
+    margin-bottom: 3rem;
+    font-family: var(--lex-font);
+    font-weight: 400;
+  }
+  
+  h3{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--cc-light-grey);
+    font-family: var(--bs-font);
+    font-size: 1.7rem;
+  }
+  
+  img,
+  svg{
+    max-width: 100%;  
+  }
+  
+  body {
+    background-color: var(--cc-light-grey);
+  }
+  
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3rem;
+  }
+  
+  .flex{
+    display: flex;
+  }
+  
+  /* Image */
+  .image{
+    margin: 1rem 0;
+    width: 50px;
+    height: 50px;
+    
+  }
+  
+  /* Sedans  */
+  .div-one{
+    background-color: var(--cc-1);
+    padding: 2rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .fc-1{
+    color: var(--cc-1);
+  }
+  
+  /* SUVs */
+  .div-two{
+    background-color: var(--cc-2);
+    padding: 2rem;  
+  }
+  .fc-2{
+    color: var(--cc-2);
+  }
+  
+  /* Luxury */
+  .div-three{
+    background-color: var(--cc-3);
+    padding: 2rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .fc-3{
+    color: var(--cc-3);
+  }
+  
+  /* Button */
+  .btn{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0.5rem 1.3rem;
+    background-color: var(--cc-light-grey);
+    border-radius: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+  }
+  
+  .btn:hover{
+    color: white;
+    background-color: transparent;
+    border: 2px solid #fff;
+  }
+  
+  .grid-link{
+    font-size: 1.5rem;
+    text-align: center;
+    color: blue;
+    text-decoration: underline;
+    margin-top: 2rem;
+    display: block;
+  }
+  
+  /*   Media Query */
+  @media screen and (max-width: 600px){
+    .flex{
+      flex-direction: column;
+    }
+  
+    .container{
+      position: static;
+      padding: 3rem;
+      transform: none;
+    }
+  
+    .div-one{
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+    .div-three{
+      border-radius: 0;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+  }
+  }
