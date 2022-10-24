@@ -1,0 +1,115 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #dadcdd;
+  font-family: helvetica;
+  font-size: 14px;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 2rem ;
+  min-height: 400px;
+  width: 350px;
+  border-radius: 10px;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+  border: solid 1px green;
+}
+input[type='submit']{
+  border: 0;
+  outline:0;
+}
+h2 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-fields input {
+  margin-bottom: 1.5rem;
+  padding: 8px;
+  display: block;
+  width: 100%;
+  border: solid 1px rgb(20, 20, 20, 0.5);
+  outline: 0;
+  border-radius: 7px;
+  
+}
+
+.form-fields p{
+    margin-top: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.login-btn{
+    font-weight: bold;
+    display: block;
+    min-width: 45%;
+    margin: auto;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.register-info{
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 1.5rem;
+}
+.gender-field{
+    margin-top: 1.5rem;
+    margin-top: 2rem;
+    
+}
+.gender-field :first-child{
+    margin-bottom: 7px;
+}
+
+.center h3{
+  font-size: 2rem;
+  color: #2ec22e;
+  margin-bottom: 1rem;
+}
+.center p{
+  font-size: 1rem
+}
+
+.color-select{
+ height: 40px;
+  border: none;
+  margin-top: 7px;
+}
+
+.image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

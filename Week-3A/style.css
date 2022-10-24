@@ -1,0 +1,260 @@
+*,
+*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: var(--poppins);
+    /* font-family: Arial, Helvetica, sans-serif; */
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --poppins: "Poppins", sans-serif;
+    --roboto: "Roboto", sans-serif;
+}
+
+.container{
+    color: #fff;
+    padding: 1rem 6rem;    
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+/* General */
+img{
+    width: 100%;
+}
+header{
+    background-color: #5e090d;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 3rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+nav a:hover{
+    color: #f5c160;
+}
+nav a::after{
+    width: 0%;
+    height: 2px;
+    content: "";
+    display: block;
+    background-color: #f5c160;
+    transition: .3s ease-in-out all;
+}
+nav a:hover::after{
+    width: 100%;
+}
+.header-text h1{
+    font-size: 4rem;
+    line-height: 1.2;
+}
+.logo{
+    align-items: center;
+    display: flex;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+.logo h3{
+    color: #fff;
+}
+span{
+    color: orange;
+    font-size: 2rem;
+    margin-left: 2px;
+}
+
+.contact-me{
+    background-color: orange;
+    padding: 0.6rem 1.2rem;
+    display: inline-block;
+    margin-top: 3rem;
+    border-radius: 5px;
+    color: #3e090d;
+}
+.profile-photo{
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 4;
+    right: 4%;
+    top: 20%;
+    
+}
+.profile-photo img{
+    border-radius: 50%;
+    border: solid white 5px;
+}
+
+.job-tag{
+    position: absolute;
+    background-color: bisque;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    color: #3e090d;
+    font-weight: bold;
+    font-size: 1.2rem;
+    left: 28%;
+    top: 34%;
+}
+.header-text{
+    margin-top: 8%;
+}
+
+.title{
+    text-align: center;
+    margin-top: 1rem;
+    
+}
+.title h2{
+    color: #3e090d;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.title span{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.title p{
+    color: black;
+    width: 70%;
+    margin: auto;
+    line-height: 1.5;
+}
+
+/* Sections */
+#about-me,
+#services,
+#projects{
+    height: 100vh;
+}
+
+/* About Me section */
+.flex-2{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;  
+      
+}
+.container h2{
+    color: black;
+    text-align: center;
+    margin: 1rem 0;
+}
+.skills-image{
+    text-align: center;
+}
+.skills-image img{
+    width: 60px;
+}
+.skills-image h3{
+    color: black;
+}
+
+.hobbies-priorities{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin:  auto;
+      
+    padding-top: 3rem;
+    color: #000;
+}
+
+
+/* Services */
+#services{
+    background-color: rgb(245, 245, 245);
+}
+.services-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 3rem;
+    width: 80%;
+    margin: auto;
+}
+.service-content img{
+    width: 40%;
+}
+.service-content p
+{
+    color: black;
+}
+.service-content h3
+{
+    margin: 1rem 0;
+    color: black;
+    font-weight: 600;
+}
+.service-content{
+    background-color: white;
+    padding: 2rem;
+    margin-top: 3.5rem;
+    border-radius: 10px;
+  height: 90%;
+}
+
+/* Projects */
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.row-image img{
+    border-radius: 10px;
+    width: 100%;
+  height: 250px;
+}
+.row a{
+    color: rgb(51, 51, 50);
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer{
+    background-color: #3e090d;
+    height: 40vh;
+    padding: 2rem 0;
+}
+
+.social-media-icons{
+    display: flex;
+    width:15%;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+.footer-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image{
+    width: 20px;
+    height: 20px;
+}
+
+.copyright{
+    margin-top: 1.5rem;
+}

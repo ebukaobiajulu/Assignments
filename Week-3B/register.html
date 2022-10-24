@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Week 3 Tasks: CSS Fundamentals - Registration and Log in | Create Account</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+        <form class="registration-form" action="registrationsucess.html">
+            <h2>CREATE ACCOUNT</h2>
+            <div class="form-fields">
+                <input type="text"  placeholder="First Name" class="firstname">
+                <input type="text"  placeholder="Last Name" class="lastname">
+                <input type="tel"  placeholder="Phone Number" class="phonenumber">
+                <input type="email" placeholder='Email Address' class="email" required >
+            </div>
+            <div class="gender-field">
+                <p>Gender (select field)</p>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+            </div> 
+            <div class="form-fields">
+                <p>Date of Birth</p>
+                <input type="date" name="date" id="dob" placeholder="Date of Birth">
+                <label for="color">Favourite Color</label>
+                <input type="color" name="favColor" id="color" value="#fff" class="color-select">
+            </div>
+            <input type="submit" value="Register" class= "login-btn">
+        </form>
+    </div>
+    
+    
+</body>
+
+</html>
